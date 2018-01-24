@@ -21,7 +21,7 @@ public class Counter {
 	
 	// Representacion en caracteres
 	public String toString() {
-		return Integer.toString(valor) + " " + id;
+		return valor + " " + id;
 	}
 	
 	
