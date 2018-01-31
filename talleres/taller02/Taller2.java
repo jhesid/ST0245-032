@@ -1,14 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package taller_2;
 
-/**
- *
- * @author cl18417
- */
 public class Taller2 {
     
      public static int gcd(int p,int q){
@@ -16,7 +6,8 @@ public class Taller2 {
             return p;
         }else{
             return gcd(q,p%q);
-    }
+        }
+        
     }
  
      public static boolean SumaGrupo(int start,int[]nums,int target){
@@ -25,6 +16,24 @@ public class Taller2 {
          }else{
          return SumaGrupo(start + 1,nums,target - nums[start]) || SumaGrupo(start + 1,nums,target);
          }
+     }
+     
+     public static void combinations(String s){
+    	 
+    	combinationsAux("",s);
+     }
+     
+     
+     public static void combinationsAux(String base, String s) {
+    	 
+    	 if (s.length() == 0) {
+    		 System.out.print(base + " ");
+    	 }
+    	 else {
+    		 combinationsAux(base + s.charAt(0), s.substring(1));
+    		 combinationsAux(base,s.substring(1));
+    	 }
+    	 
      }
      
 }
