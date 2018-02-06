@@ -3,13 +3,12 @@ package taller_3;
 
 public class Taller3 {
 	
+	// TORRES DE HANOI
 	
 	public static void torresDeHannoi(int n) {
 		torresDeHannoiAux(n, 1, 2, 3);
 	}
-	
-	
-	
+		
 	private static void torresDeHannoiAux(int n, int origen, int intermedio, int destino) {
 		
 		if (n == 1) {
@@ -27,28 +26,24 @@ public class Taller3 {
 	
 	}
 	
-	public static void combinations(String s){
-		
-		combinationsAux("",s);
-		
-	}
+	// SUBCONJUNTOS
 	
+	public static void combinations(String s){
+		combinationsAux("",s);	
+	}
 	
 	public static void combinationsAux(String base, String s) {
 		
 		if (s.length() == 0) {
-			System.out.print(base + " ");
-                       
-                       
+			System.out.print(base + " ");      
 		}
 		else {
 			combinationsAux(base + s.charAt(0), s.substring(1));
-			combinationsAux(base              , s.substring(1));
-			
+			combinationsAux(base              , s.substring(1));	
 		}
 	}
 	
-	
+	// PERMUTACIONES
 	public static void permutation(String s) {
 		permutationAux(" ",s);
 	}
@@ -59,21 +54,10 @@ public class Taller3 {
 			System.out.print(base + " ");
 		}
 		else {
-			//permutationAux(base + s.charAt(0), s.substring(1));
-			
 			for (int i = 0; i < s.length();i++) {
 				permutationAux(base + s.charAt(i), s.replace(Character.toString(s.charAt(i)),""));
 			}
-			
-			
-			
-		}
-		
-		
+		}	
 	}
-	
-	
-	
-	
 }
 
