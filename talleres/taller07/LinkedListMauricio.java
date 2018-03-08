@@ -107,8 +107,6 @@ private int size;
     	}
     	return t;
     }
-    
-    
     public boolean equal(LinkedListMauricio otraList) {
     	if (size() == otraList.size()) {
     		int cont = 0;
@@ -125,6 +123,4 @@ private int size;
     }
 
 }
-
-
 
