@@ -7,7 +7,7 @@ package laboratorio_4;
 
 /**
  *
- * @author CristianCamilo
+ * @author CristianCamilo&&Jhesid
  */
 public class Laboratorio_4 {
 
