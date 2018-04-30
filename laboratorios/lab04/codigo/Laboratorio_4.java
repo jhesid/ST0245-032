@@ -29,6 +29,15 @@ public class Laboratorio_4 {
         boolean c = arbol_Cristian.buscar("Cristian");
         System.out.println(c);
         
+        
+        boolean d = arbol_Cristian.buscar("Jesusito");
+        System.out.println(d);
+        
+        boolean e = arbol_Cristian.buscar("No_esta_en_mi_arbol");
+        System.out.println(e);
+        
+        
+        
         System.out.println("====================================");
         System.out.println("Punto 2. busqueda binaria");
         System.out.println("====================================");

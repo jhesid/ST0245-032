@@ -28,24 +28,37 @@ public class Arbol_gen {
         Node abuelop = new Node("Alcides");
         Node abuelap = new Node("Crispiniana");
         
-        // Bisabuelos por parte de mama mama
-        Node bisabuelomm = new Node("Laura");
+        // Bisabuelos por parte de mama de mama
+        Node bisabuelamm = new Node("Laura");
+        Node bisabuelomm = new Node("Luis");
+        
+        // Bisabuelos papa de mi mama
+        Node bisabuelapm = new Node("Esperanza");
+        Node bisabuelopm = new Node("Arnoldo");
         
         
-        
+        // Bisabuelo por parte de papa de mi papa
+        Node bisabuelopp =   new Node("Jesusito");
         
         // Dara las relaciones
         raiz = YO;
         raiz.izquierda = mama;
         raiz.derecha = papa;
         
-        //mama.izquierda = abuelam;
+        mama.izquierda = abuelam;
         mama.derecha = abuelom;
+        
         
         papa.izquierda = abuelap;
         papa.derecha = abuelop;
         
+        abuelam.izquierda =bisabuelamm;
+        abuelam.derecha = bisabuelomm;
         
+        abuelom.izquierda = bisabuelapm;
+        abuelom.derecha = bisabuelopm;
+        
+        abuelop.derecha = bisabuelopp;
         
     }
     
